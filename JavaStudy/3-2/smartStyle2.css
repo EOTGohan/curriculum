@@ -1,0 +1,137 @@
+body {
+    min-height: 100%;
+    height: 100%;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ページ全体を整える */
+#wrapper {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.header {
+    height: 100px;
+    background-color: #141f40;
+}
+
+/* ここから本文 */
+.contents {
+    height: 250px;
+}
+
+.left {
+    float: left;
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+}
+
+/* 本文の縦長青緑以外 */
+.center_right {
+    float: left;
+}
+
+.right {
+    float: right;
+    width: 100px;
+    height: 150px;
+    background-color: #ff9e6b;
+}
+
+.center_uppers {
+    width: 150px;
+    height: 150px;
+}
+
+.center_upper1 {
+    height: 50px;
+    background-color: #dbd400;
+}
+
+.center_upper2 {
+    height: 100px;
+    background-color: #0093b7;
+}
+
+.center_lower {
+    width: 250px;
+    height: 100px;
+    background-color: #8c2727;
+}
+/* 本文ここまで */
+
+.footer {
+    height: 100px;
+    background-color: #d98d30;
+}
+
+
+/* ウィンドウ幅が最大 767px までの場合 */
+@media screen and (max-width: 767px) {
+    #wrapper {
+        width: 300px;
+    }
+
+    .left {
+        width: 100px;
+    }
+
+    .right {
+        width: 75px;
+    }
+
+    .center_uppers {
+        width: 125px;
+    }
+
+    .center_lower {
+        width: 200px;
+    }
+
+}
+
+/* ウィンドウ幅が最大 479px までの場合 */
+@media screen and (max-width: 479px) {
+    #wrapper {
+        width: 150px;
+    }
+
+    .contents {
+        height: auto;
+    }
+
+    .left {
+        float: none;
+        width: 150px;
+    }
+
+    .center_right {
+        float: none;
+        width: 150px;
+    }
+
+    .right {
+        float: none;
+        width: 150px;
+    }
+
+    .center_uppers {
+        width: 150px;
+    }
+
+    .center_lower {
+        width: 150px;
+    }
+}
+
+/* reset.css */
+* {
+    margin: 0;
+    padding: 0;
+}
